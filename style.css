@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Pacifico&display=swap');
+
+body {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #fff0f5, #e6f7ff);
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 3rem;
+  color: #ff69b4;
+  margin-top: 30px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+  color: #ff914d;
+  text-align: center;
+  font-style: italic;
+  font-size: 1.5rem;
+  margin-bottom: -15px;
+}
+
+span {
+  color: #ff69b4;
+  font-weight: bold;
+}
+
+h4 {
+  text-align: right;
+  color: #3c787e;
+  padding: 15px 25px;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+#pets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+  padding: 40px;
+}
+
+.card {
+  width: 400px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 25px;
+  border: 2px solid #ddd;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(255, 105, 180, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  color: #ff4081;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #444;
+  text-align: justify;
+}
+
+button {
+  display: block;
+  margin: 15px auto 0 auto;
+  padding: 10px 20px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, #ff69b4, #ff914d);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 2px 2px 8px rgba(255, 105, 180, 0.5);
+  transition: background 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background: linear-gradient(135deg, #ff914d, #ff69b4);
+  transform: scale(1.05);
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  #pets {
+    flex-wrap: wrap;
+  }
+}
